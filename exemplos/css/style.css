@@ -1,0 +1,15 @@
+body{
+    padding-bottom: 500px;
+}
+
+.card{
+    width: 200px;
+}
+
+#card-banner{
+    width: 500px;
+}
+
+.carrousel-item{
+    height: 500px;
+}
