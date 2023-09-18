@@ -27,17 +27,17 @@ mongoose.connect('mongodb://127.0.0.1:27017/escola',
 })
 
 //criando model
-const  Alunos = mongoose.model("alunos", alunoSchema);
+const  Aluno = mongoose.model("aluno", alunoSchema);
 
 //colocar dados dentro da collection
-const Carlos = new Alunos({
+const Carlos = new Aluno({
     matricula: "rm501",
-    nome: "Carlos Silva",
+    nome: "Carlos Caarvalho",
     idade : 17,
     turma : "2MIB"
 })
 
-const Otto = new Alunos({
+const Otto = new Aluno({
     matricula: "rm1001",
     nome: "Otto Oliveira",
     idade : 15,

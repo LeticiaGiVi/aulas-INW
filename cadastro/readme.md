@@ -1,0 +1,1 @@
+após clonar a pasta dar o comando "npm i" no terminal 
