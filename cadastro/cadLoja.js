@@ -29,10 +29,16 @@ mongoose.connect('mongodb://127.0.0.1:27017/loja',
         resultados.push(dados)
     })
     .on('end', ()=>{
-        produtos.insertMany(resultados)
+        produto.insertMany(resultados)
+        .then(()=>{
+            console.log("Dados inseridos com sucesso")
+            mongoose.connection.close();
+        })
+        .catch((error)=>{
+            console.error("Erro ao importar dados", error)
+            mongoose.connection.close();
+        })
     })
  }
 
-
- // precisa terminar
- 
+lerCSVSalvarNoMongo();
